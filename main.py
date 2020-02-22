@@ -43,16 +43,30 @@ def checkRows():
         playingGame = False
     # Retunr the winner X or O
     if row1:
-        return board[2]
+        return board[0]
     if row2:
-        return board[5]
+        return board[3]
     if row3:
-        return board[8]
+        return board[6]
     return
 
+
 def checkColumns():
+    global playingGame
     column1 = board[0] == board[3] == board[6] != "-"
     column2 = board[1] == board[4] == board[7] != "-"
+    column3 = board[2] == board[5] == board[8] != "-"
+
+    if column1 or column2 or column3:
+        playingGame = False
+
+    if column1:
+        return board[0]
+    if column2:
+        return board[3]
+    if column3:
+        return board[6]
+
     return
 
 
