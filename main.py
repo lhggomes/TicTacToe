@@ -38,6 +38,7 @@ def displayBoard():
     print(board[3] + "|" + board[4] + "|" + board[5])
     print(board[6] + "|" + board[7] + "|" + board[8])
 # Let's play the game!
+displayBoard()
 
 def playGame():
     print("The Initial Game!")
@@ -65,4 +66,3 @@ while playingGame:
     elif winner == None:
         print("Tie")
 
-playGame()
