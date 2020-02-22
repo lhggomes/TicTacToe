@@ -14,8 +14,22 @@ currentPlayer = "X"
 # Functions to check the status of the game
 
 
-def checkIfWin():
+def checkForWinner():
+    rowWinner = checkRows()
+    columnWinner = checkColumns()
+    diagonalWinner = checkDiagonal()
+    return
 
+
+def checkRows():
+    return
+
+
+def checkColumns():
+    return
+
+
+def checkDiagonal():
     return
 
 
@@ -28,7 +42,7 @@ def flipPlayer():
 
 
 def checkIfGameOver():
-    checkIfWin()
+    checkForWinner()
     checkIfTie()
 
 
@@ -37,13 +51,17 @@ def displayBoard():
     print(board[0] + "|" + board[1] + "|" + board[2])
     print(board[3] + "|" + board[4] + "|" + board[5])
     print(board[6] + "|" + board[7] + "|" + board[8])
+
+
 # Let's play the game!
 displayBoard()
+
 
 def playGame():
     print("The Initial Game!")
     displayBoard()
 # Defining a Function to Handle the Positons
+
 
 def handleTurn(currentPlayer):
     position = input("Choose a positon from 1-9: ")
@@ -65,4 +83,3 @@ while playingGame:
         print(winner + " won.")
     elif winner == None:
         print("Tie")
-
