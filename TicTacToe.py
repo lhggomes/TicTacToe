@@ -71,6 +71,18 @@ def checkColumns():
 
 
 def checkDiagonal():
+    global playingGame
+
+    diagonal1 = board[0] == board[4] == board[8] != "-"
+    diagonal2 = board[2] == board[4] == board[6] != "-"
+
+    if diagonal1 or diagonal2:
+        playingGame = False
+
+    if diagonal1:
+        return board[0]
+    if diagonal2:
+        return board[6]
     return
 
 
