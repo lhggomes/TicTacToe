@@ -90,6 +90,7 @@ def checkIfTie():
     global playingGame
     if "-" not in board:
         playingGame = False
+       
 
     return
 
