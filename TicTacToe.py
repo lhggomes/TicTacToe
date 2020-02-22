@@ -130,12 +130,17 @@ def playGame():
 def handleTurn(currentPlayer):
     print(currentPlayer + "'s turn.")
     position = input("Choose a positon from 1-9: ")
-    while position not in ["1", "2", "3", "4", "5", "6", "7", "8", "9"]:
-        position = input("Invalid input. Choose a postion between 1 and 9")
-    position = int(position) - 1
-    
-    if board[position] != "-":
-        print("You can't go in there. Go again!")
+    valid = False
+
+    while not valid:
+        while position not in ["1", "2", "3", "4", "5", "6", "7", "8", "9"]:
+            position = input("Invalid input. Choose a postion between 1 and 9")
+        position = int(position) - 1
+
+        if board[position] == "-":
+            valid = True
+        else:
+             print("You can't go in there. Go again!")
 
     board[position] = currentPlayer
     displayBoard()
