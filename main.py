@@ -1,5 +1,13 @@
 #
 
+board =  ["-","-","-",
+         "-","-","-",
+          "-","-","-",] 
+
+
+
+
+
 #board 
 #display 
 #play game 
@@ -11,5 +19,6 @@
 #check tie 
 
 #flip player 
+
 
 
