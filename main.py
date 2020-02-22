@@ -1,9 +1,17 @@
 # PROJECT TIC TAC TOE
 
+#GLOBAL VARIABLES 
+
 # Creating a Board for the Game 
 board = [" - ", " - ", " - ",
          " - ", " - ", " - ",
          " - ", " - ", " - ", ]
+#If Game Still going 
+playingGame = True
+
+#Who on? Or there's a Tie? 
+winner = None
+
 # Function to Display the board 
 def displayBoard():
     print(board[0] + "|" + board[1] + "|" + board[2])
