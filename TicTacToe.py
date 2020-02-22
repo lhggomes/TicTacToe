@@ -120,7 +120,7 @@ def playGame():
 def handleTurn(currentPlayer):
     position = input("Choose a positon from 1-9: ")
     position = int(position) - 1
-    board[position] = "X"
+    board[position] = currentPlayer
     displayBoard()
 
 
@@ -134,5 +134,5 @@ while playingGame:
     # The Game has ended
     if winner == "X" or winner == "O":
         print(winner + " won.")
-    elif winner == None:
-        print("Tie")
+   
+        
