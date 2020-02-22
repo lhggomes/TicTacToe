@@ -92,6 +92,13 @@ def checkIfTie():
 
 
 def flipPlayer():
+    global currentPlayer
+    #Changing the current player between O and X
+    if currentPlayer == "X":
+       currentPlayer = "O"
+    elif currentPlayer == "O":
+        currentPlayer = "X"
+        
     return
 
 
