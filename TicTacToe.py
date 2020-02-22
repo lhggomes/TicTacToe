@@ -44,9 +44,9 @@ def checkRows():
     # Retunr the winner X or O
     if row1:
         return board[0]
-    if row2:
+    elif row2:
         return board[3]
-    if row3:
+    elif row3:
         return board[6]
     return
 
@@ -62,9 +62,9 @@ def checkColumns():
 
     if column1:
         return board[0]
-    if column2:
+    elif column2:
         return board[3]
-    if column3:
+    elif column3:
         return board[6]
 
     return
@@ -81,7 +81,7 @@ def checkDiagonal():
 
     if diagonal1:
         return board[0]
-    if diagonal2:
+    elif diagonal2:
         return board[6]
     return
 
