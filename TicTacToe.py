@@ -10,7 +10,7 @@ playingGame = True
 winner = None
 currentPlayer = "X"
 
-# Display the Board
+# Function to Display The Board
 
 
 def displayBoard():
