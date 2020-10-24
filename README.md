@@ -6,6 +6,11 @@ About this repository
 This a online  version of the famouse Tic Tac Toe game. 
 It was made using Python Language. 
 
+Some screen shots
+
+<img src="/docs/first.png" alt="First Screen Example"/>
+<img src="/docs/second.png" alt="Second Screen Example"/>
+
 
 Table of Contents
 -----------------
